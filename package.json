@@ -1,0 +1,30 @@
+{
+  "name": "pk-icons",
+  "version": "1.0.0",
+  "description": "Reusable React icon components for personal use",
+  "type": "module",
+  "main": "./src/index.js",
+  "exports": {
+    ".": "./src/index.js",
+    "./HeartIcon": "./src/HeartIcon.jsx"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build"
+  },
+  "keywords": ["react", "icons", "svg", "components"],
+  "author": "your-name",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  },
+  "dependencies": {
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.5.1",
+    "vite": "^6.3.5"
+  }
+}
