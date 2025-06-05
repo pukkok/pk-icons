@@ -1,11 +1,13 @@
-const HeartIcon = ({ size = 24, className = '' }) => (
+export const HeartIcon = ({ size = 24, className = '', style, ...props }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width={size}
     height={size}
     fill="currentColor"
     viewBox="0 0 24 24"
+    style={style}
     className={className}
+    {...props}
   >
     <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 
       4.42 3 7.5 3c1.74 0 3.41 0.81 
@@ -15,5 +17,3 @@ const HeartIcon = ({ size = 24, className = '' }) => (
       11.54L12 21.35z"/>
   </svg>
 )
-
-export default HeartIcon
