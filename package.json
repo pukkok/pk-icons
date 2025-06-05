@@ -5,8 +5,7 @@
   "type": "module",
   "main": "./src/index.js",
   "exports": {
-    ".": "./src/index.js",
-    "./HeartIcon": "./src/HeartIcon.jsx"
+    ".": "./src/index.js"
   },
   "scripts": {
     "dev": "vite",
