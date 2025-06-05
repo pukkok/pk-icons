@@ -1,1 +1,5 @@
-export { default as HeartIcon } from './HeartIcon'
+export { HeartIcon } from './HeartIcon'
+export { ArrowIcon } from './ArrowIcon'
+export { ChevronIcon } from './ChevronIcon'
+export { DoubleLeftChevronIcon } from './DoubleLeftChevronIcon'
+export { DoubleRightChevronIcon } from './DoubleRightChevronIcon'
