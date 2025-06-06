@@ -3,8 +3,8 @@ export const ArrowIcon = ({ size = 24, direction = 'down', style = {}, className
   const angleMap = {
     up: '180deg',
     down: '0deg',
-    left: '-90deg',
-    right: '90deg'
+    left: '90deg',
+    right: '-90deg'
   }
 
   return (
