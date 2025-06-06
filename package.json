@@ -10,7 +10,8 @@
   "types": "./src/index.d.ts",
   "scripts": {
     "dev": "vite",
-    "build": "vite build"
+    "build": "vite build",
+    "indexing": "node scripts/generate-icon-index.js"
   },
   "keywords": ["react", "icons", "svg", "components"],
   "author": "your-name",
