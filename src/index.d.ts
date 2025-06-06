@@ -6,12 +6,22 @@ type CommonIconProps = {
   className?: string
 } & SVGProps<SVGSVGElement>
 
+type ActiveIconProps = CommonIconProps & {
+  isActive?: boolean
+}
+
 declare module 'pk-icons' {
-  export const HeartIcon: FC<CommonIconProps>
-  export const ArrowIcon: FC<CommonIconProps>
+  export const ArrowIcon: FC<CommonIconProps & {
+    direction?: 'up' | 'down' | 'left' | 'right'
+  }>
+  export const BookmarkIcon: FC<ActiveIconProps>
   export const ChevronIcon: FC<CommonIconProps & {
     direction?: 'up' | 'down' | 'left' | 'right'
   }>
-  export const DoubleLeftChevronIcon: FC<CommonIconProps>
-  export const DoubleRightChevronIcon: FC<CommonIconProps>
+  export const DoubleChevronIcon: FC<CommonIconProps & {
+    direction?: 'left' | 'right'
+  }>
+  export const HamburgerToggleIcon: FC<ActiveIconProps>
+  export const HeartIcon: FC<ActiveIconProps>
+  export const MoreVerticalIcon: FC<CommonIconProps>
 }
