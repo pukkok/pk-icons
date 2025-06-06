@@ -24,4 +24,7 @@ declare module 'pk-icons' {
   export const HamburgerToggleIcon: FC<ActiveIconProps>
   export const HeartIcon: FC<ActiveIconProps>
   export const MoreVerticalIcon: FC<CommonIconProps>
+  export const RedoIcon: FC<CommonIconProps>
+  export const SearchIcon: FC<CommonIconProps>
+  export const UndoIcon: FC<CommonIconProps>
 }
