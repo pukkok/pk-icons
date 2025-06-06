@@ -11,7 +11,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "indexing": "node scripts/generate-icon-index.js"
+    "indexing": "node scripts/generate-icon-index.js",
+    "deploy": "vite build && copy dist\\index.html dist\\404.html && gh-pages -d dist"
   },
   "keywords": ["react", "icons", "svg", "components"],
   "author": "your-name",
@@ -26,6 +27,7 @@
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^4.5.1",
+    "gh-pages": "^6.3.0",
     "vite": "^6.3.5"
   }
 }
