@@ -12,9 +12,9 @@ const OUT_FILE = path.resolve(__dirname, '../src/index.js')
 const files = fs.readdirSync(ICONS_DIR)
 
 const exports = files
-  .filter(f => f.endsWith('.jsx'))
+  .filter(f => f.endsWith('.js'))
   .map(f => {
-    const name = path.basename(f, '.jsx')
+    const name = path.basename(f, '.js')
     return `export { ${name} } from './icons/${name}'`
   })
   .join('\n')
