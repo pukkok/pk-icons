@@ -7,14 +7,16 @@
     ".": "./src/index.js"
   },
   "types": "./src/index.d.ts",
+  "files": ["src"],
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "indexing": "node scripts/generate-icon-index.js",
-    "deploy": "vite build && copy dist\\index.html dist\\404.html && gh-pages -d dist"
+    "deploy-demo": "vite build && copy dist\\index.html dist\\404.html && gh-pages -d dist",
+    "prepare": "npm run build"
   },
   "keywords": ["react", "icons", "svg", "components"],
-  "author": "your-name",
+  "author": "pukkok",
   "license": "MIT",
   "peerDependencies": {
     "react": "^17.0.0 || ^18.0.0 || ^19.0.0",
