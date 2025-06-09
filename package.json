@@ -2,17 +2,17 @@
   "name": "pk-icons",
   "version": "1.0.0",
   "type": "module",
-  "main": "./src/index.js",
+  "main": "./lib/index.js",
   "exports": {
-    ".": "./src/index.js"
+    ".": "./lib/index.js"
   },
   "types": "./src/index.d.ts",
-  "files": ["src"],
+  "files": ["lib", "src"],
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
+    "build": "vite build --config vite.config.lib.js",
+    "dev": "vite --config vite.config.demo.js",
+    "deploy": "vite build --config vite.config.demo.js && cp dist/index.html dist/404.html && gh-pages -d dist",
     "indexing": "node scripts/generate-icon-index.js",
-    "deploy-demo": "vite build && copy dist\\index.html dist\\404.html && gh-pages -d dist",
     "prepare": "npm run build"
   },
   "keywords": ["react", "icons", "svg", "components"],
@@ -22,7 +22,6 @@
     "react": "^17.0.0 || ^18.0.0 || ^19.0.0",
     "react-dom": "^17.0.0 || ^18.0.0 || ^19.0.0"
   },
-  "dependencies": {},
   "devDependencies": {
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
